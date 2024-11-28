@@ -1,0 +1,138 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #2b5876, #4e4376);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Container */
+  .container {
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.2s ease-out;
+  }
+  
+  /* Profile Section */
+  .profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  }
+  
+  .profile-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    animation: slideIn 1s ease forwards;
+  }
+  
+  .profile-desc {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease forwards;
+  }
+  
+  /* Links Section */
+  .links .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .links .link i {
+    font-size: 1.3rem;
+    animation: bounce 2s infinite ease-in-out;
+  }
+  
+  .links .link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(90deg, #ff758c, #ff7eb3);
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  footer i {
+    color: red;
+    animation: pulse 1s infinite ease-in-out;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+  }
+  
